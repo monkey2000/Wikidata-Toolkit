@@ -129,7 +129,7 @@ public class MwLocalDumpFile implements MwDumpFile {
 	 */
 	public MwLocalDumpFile(String filePath, DumpContentType dumpContentType,
 			String dateStamp, String projectName) {
-		this.dumpFilePath = Paths.get(filePath).toAbsolutePath();
+		this.dumpFilePath = Paths.get(filePath);
 		this.dumpFileName = this.dumpFilePath.getFileName().toString();
 
 		try {
